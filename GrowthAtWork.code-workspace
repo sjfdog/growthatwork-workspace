@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "GrowthWebsite",
+      "path": "GrowthWebsite"
+    },
+    {
+      "name": "WorthwhileGrowthIndex",
+      "path": "WorthwhileGrowthIndex"
+    },
+    {
+      "name": "WayFinder Integrated Wealth",
+      "path": "WayFinder-Values-to-Integrated-Wealth-Experiment"
+    },
+    {
+      "name": "WayFinder Total Health",
+      "path": "WayFinder-Values-to-Total-Health-Experiment"
+    }
+  ],
+  "settings": {
+    "git.autoRepositoryDetection": "subFolders",
+    "git.openRepositoryInParentFolders": "always"
+  }
+}

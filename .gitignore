@@ -1,0 +1,10 @@
+# Child application repositories are managed independently.
+/GrowthWebsite/
+/WorthwhileGrowthIndex/
+/WayFinder-Values-to-Integrated-Wealth-Experiment/
+/WayFinder-Values-to-Total-Health-Experiment/
+
+# Root-level local clutter
+.DS_Store
+node_modules/
+dist/
