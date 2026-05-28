@@ -20,6 +20,7 @@ clone_if_missing "https://github.com/sjfdog/growth-website.git" "GrowthWebsite"
 clone_if_missing "https://github.com/sjfdog/worthwhile-growth-index.git" "WorthwhileGrowthIndex"
 clone_if_missing "https://github.com/sjfdog/wayfinder-values-to-integrated-wealth-experiment.git" "WayFinder-Values-to-Integrated-Wealth-Experiment"
 clone_if_missing "https://github.com/sjfdog/wayfinder-values-to-total-health-experiment.git" "WayFinder-Values-to-Total-Health-Experiment"
+clone_if_missing "https://github.com/sjfdog/dallman-ria-campaign-workspace.git" "RIACampaign"
 
 echo
 echo "Workspace bootstrap complete."

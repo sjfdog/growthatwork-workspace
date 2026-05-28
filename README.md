@@ -1,23 +1,23 @@
 # GrowthAtWork Workspace
 
-This directory is a workspace that contains four separate Git repositories plus a small set of shared handoff files.
+This directory is the Growth@Work umbrella workspace for the DAllman client. It contains the current app repos, the RIA campaign workspace repo, and a small set of shared handoff files.
 
 Important:
-- The root `GrowthAtWork` folder can be versioned separately as a workspace repo.
-- Each product lives in its own repo and deploys independently.
+- The root `GrowthAtWork` folder is versioned separately as the umbrella workspace repo.
+- Each product or campaign workspace lives in its own nested repo and deploys independently.
 - The canonical docs are the `README.md` and `.env.example` files inside each repo.
 - Older files such as `AWS_MIGRATION_GUIDE.md`, `AWS_DEPLOYMENT_GUIDE.md`, `COMPLETE_IMPLEMENTATION_GUIDE.md`, and `TRANSLATION_GUIDE.md` are historical context, not the first place to start.
 
 ## Client Context
 
-Growth@Work is the broader DAllman client context. This `GrowthAtWork` workspace is the existing app set for the marketing site, Worthwhile Growth Index, and WayFinder experiments.
+Growth@Work is the broader DAllman client context. Worthwhile Growth Index is one Growth@Work app, not the whole Growth@Work body of work.
 
-The RIA go-to-market campaign is also Growth@Work work, but it is not the Worthwhile Growth Index app. Keep it as a sibling workspace so the RIA campaign repos, docs, and deployments do not get mixed into the existing WGI/WayFinder app workspace.
+The RIA go-to-market campaign is also Growth@Work work. Keep it inside the Growth@Work umbrella, but in its own `RIACampaign` workspace so its repos, docs, and deployments do not get mixed into WGI or WayFinder.
 
-Sibling workspace:
+RIA campaign workspace:
 
 ```text
-/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign/
+/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/RIACampaign/
 ```
 
 Planned GitHub repos:
@@ -28,7 +28,7 @@ Planned GitHub repos:
 
 See [RIA_CAMPAIGN_PLAN.md](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/RIA_CAMPAIGN_PLAN.md) for the migration plan and naming map.
 
-## Active Repos
+## Nested Repos
 
 | Repo | Purpose | GitHub | Current Deploy Target | Current Public URL |
 | --- | --- | --- | --- | --- |
@@ -36,6 +36,7 @@ See [RIA_CAMPAIGN_PLAN.md](/home/spencerf/Documents/Projects/Work/DAllman/Growth
 | `WorthwhileGrowthIndex` | WGI assessment app with AI chat, transcript email, and growth-plan email | `sjfdog/worthwhile-growth-index` | App Runner `wgi-app` | `https://www.worthwhilegrowth.com` |
 | `WayFinder-Values-to-Integrated-Wealth-Experiment` | Authenticated WayFinder app backed by Neon/Postgres | `sjfdog/wayfinder-values-to-integrated-wealth-experiment` | App Runner `wayfinder-values-integrated-wealth` | paused |
 | `WayFinder-Values-to-Total-Health-Experiment` | Authenticated WayFinder app backed by Neon/Postgres | `sjfdog/wayfinder-values-to-total-health-experiment` | App Runner `wayfinder-values-total-health` | paused |
+| `RIACampaign` | RIA go-to-market campaign workspace | `sjfdog/dallman-ria-campaign-workspace` | not deployed yet | not deployed yet |
 
 ## Quick Start
 
@@ -45,7 +46,7 @@ If you cloned the workspace repo first, run:
 ./scripts/bootstrap.sh
 ```
 
-That will clone the four product repos into the expected subfolders.
+That will clone the current product repos and the RIA campaign workspace into the expected subfolders.
 
 Then:
 
@@ -65,10 +66,10 @@ npm run build
 
 These are local helper scripts for this workspace:
 
-- [scripts/status.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/status.sh): show branch and repo status for all four repos
-- [scripts/build-all.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/build-all.sh): run `npm run check` and `npm run build` across repos
+- [scripts/status.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/status.sh): show branch and repo status for the nested repos
+- [scripts/build-all.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/build-all.sh): run `npm run check` and `npm run build` across the current app repos
 - [scripts/aws-services.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/aws-services.sh): list current App Runner services in `us-east-1`
-- [scripts/bootstrap.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/bootstrap.sh): clone the four app repos into the expected workspace layout
+- [scripts/bootstrap.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/bootstrap.sh): clone the app repos and RIA campaign workspace into the expected layout
 
 ## Deployment Rules
 
@@ -99,7 +100,7 @@ Use the WayFinder repos when the task mentions:
 - commitments
 - database changes
 
-Use the sibling `RIACampaign` workspace when the task mentions:
+Use the `RIACampaign` workspace when the task mentions:
 - RIA campaign
 - Advisor Assessment
 - RIA Evolution Assessment

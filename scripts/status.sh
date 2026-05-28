@@ -8,6 +8,7 @@ repos=(
   "WorthwhileGrowthIndex"
   "WayFinder-Values-to-Integrated-Wealth-Experiment"
   "WayFinder-Values-to-Total-Health-Experiment"
+  "RIACampaign"
 )
 
 for repo in "${repos[@]}"; do

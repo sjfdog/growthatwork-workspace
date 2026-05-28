@@ -1,6 +1,6 @@
 # RIA Campaign Migration Plan
 
-This is a planned sibling project family for the DAllman client. It is Growth@Work work, but it is not part of the existing Worthwhile Growth Index / WayFinder app workspace.
+This is a planned campaign workspace for the DAllman / Growth@Work client. It is Growth@Work work, but it is not the Worthwhile Growth Index app.
 
 ## Source Context
 
@@ -23,16 +23,16 @@ The briefing pages below appear to be routes inside the briefing-series app:
 ```text
 /home/spencerf/Documents/Projects/Work/DAllman/
   GrowthAtWork/
-  RIACampaign/
-    README.md
-    AGENTS.md
-    RIACampaign.code-workspace
-    scripts/
-    AdvisorAssessment/
-    RIABriefingSeries/
+    RIACampaign/
+      README.md
+      AGENTS.md
+      RIACampaign.code-workspace
+      scripts/
+      AdvisorAssessment/
+      RIABriefingSeries/
 ```
 
-Do not place the RIA Campaign apps inside the existing WGI/WayFinder `GrowthAtWork` workspace unless the user explicitly asks for that.
+Do not place the RIA Campaign apps inside the parent workspace root, WGI repo, or WayFinder repos unless the user explicitly asks for that.
 
 ## Recommended GitHub Repos
 
@@ -64,7 +64,7 @@ The briefing-series app should likely own the introduction and library experienc
 
 When the Replit exports arrive:
 
-1. Put the zip files under `/home/spencerf/Downloads/DAllman/RIACampaign/`.
+1. Put the zip files under `/home/spencerf/Downloads/DAllman/GrowthAtWork/RIACampaign/`.
 2. Unzip each export into the planned local folders.
 3. Remove Replit-only files and dependencies.
 4. Add or update `README.md`, `AGENTS.md`, `.env.example`, `.gitignore`, and deployment files.

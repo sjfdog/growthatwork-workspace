@@ -4,18 +4,18 @@ This file is for AI agents or engineers arriving cold.
 
 ## First Principles
 
-- The root folder is a workspace Git repo for shared handoff docs, VS Code settings, and helper scripts.
-- Each product is a nested Git repo with its own `origin`.
+- The root folder is the Growth@Work umbrella workspace Git repo for shared handoff docs, VS Code settings, and helper scripts.
+- Each product or campaign workspace is a nested Git repo with its own `origin`.
 - Read the target repo's `README.md` before touching code.
 - Prefer the repo `README.md` and `.env.example` over older migration or implementation guides.
 - Run `./scripts/bootstrap.sh` after cloning the workspace repo if the nested product repos are missing.
 
 ## Client-Level Context
 
-- Growth@Work is the broader DAllman client context for both this workspace and the RIA campaign.
-- This `GrowthAtWork` repo is the existing app workspace for the marketing site, Worthwhile Growth Index, and WayFinder experiments.
-- The RIA go-to-market assets are also Growth@Work work, but they are not the Worthwhile Growth Index app. Keep them in the sibling workspace at `/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign`.
-- Do not add the RIA campaign apps inside this WGI/WayFinder workspace unless the user explicitly changes that decision.
+- Growth@Work is the broader DAllman client context.
+- Worthwhile Growth Index is one Growth@Work app, not the whole Growth@Work body of work.
+- The RIA go-to-market assets are also Growth@Work work, but they are not the Worthwhile Growth Index app. Keep them in `/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/RIACampaign`.
+- Do not add RIA campaign app code to the parent workspace root, WGI repo, or WayFinder repos unless the user explicitly changes that decision.
 - See `RIA_CAMPAIGN_PLAN.md` for the planned names and migration path.
 
 ## Repo Map
@@ -45,7 +45,7 @@ This file is for AI agents or engineers arriving cold.
 
 AWS also contains a paused App Runner service named `Wayfinder`. It is not mapped to one of the four active repos above; do not change it unless the user explicitly asks.
 
-## Future RIA Campaign Map
+## RIA Campaign Map
 
 - Workspace folder: `RIACampaign`
 - Workspace repo: `dallman-ria-campaign-workspace`

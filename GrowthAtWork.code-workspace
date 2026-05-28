@@ -15,6 +15,10 @@
     {
       "name": "WayFinder Total Health",
       "path": "WayFinder-Values-to-Total-Health-Experiment"
+    },
+    {
+      "name": "RIA Campaign",
+      "path": "RIACampaign"
     }
   ],
   "settings": {
