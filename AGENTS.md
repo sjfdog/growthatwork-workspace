@@ -4,10 +4,11 @@ This file is for AI agents or engineers arriving cold.
 
 ## First Principles
 
-- The root folder is a workspace, not a Git repo.
+- The root folder is a workspace Git repo for shared handoff docs, VS Code settings, and helper scripts.
 - Each product is a nested Git repo with its own `origin`.
 - Read the target repo's `README.md` before touching code.
 - Prefer the repo `README.md` and `.env.example` over older migration or implementation guides.
+- Run `./scripts/bootstrap.sh` after cloning the workspace repo if the nested product repos are missing.
 
 ## Repo Map
 
@@ -33,6 +34,8 @@ This file is for AI agents or engineers arriving cold.
   - App Runner service: `wayfinder-values-total-health`
   - currently paused
   - job: full authenticated app backed by Postgres
+
+AWS also contains a paused App Runner service named `Wayfinder`. It is not mapped to one of the four active repos above; do not change it unless the user explicitly asks.
 
 ## Canonical Workflow
 
@@ -81,6 +84,7 @@ npm run build
 ## Useful Local Commands
 
 ```bash
+./scripts/bootstrap.sh
 ./scripts/status.sh
 ./scripts/build-all.sh
 ./scripts/aws-services.sh
