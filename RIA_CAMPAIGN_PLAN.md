@@ -1,6 +1,6 @@
 # RIA Campaign Migration Plan
 
-This is a planned sibling project family for the DAllman client. It is not part of the active GrowthAtWork app set.
+This is a planned sibling project family for the DAllman client. It is Growth@Work work, but it is not part of the existing Worthwhile Growth Index / WayFinder app workspace.
 
 ## Source Context
 
@@ -32,7 +32,7 @@ The briefing pages below appear to be routes inside the briefing-series app:
     RIABriefingSeries/
 ```
 
-Do not place the RIA Campaign apps inside the existing `GrowthAtWork` workspace unless the user explicitly asks for that.
+Do not place the RIA Campaign apps inside the existing WGI/WayFinder `GrowthAtWork` workspace unless the user explicitly asks for that.
 
 ## Recommended GitHub Repos
 

@@ -12,9 +12,10 @@ This file is for AI agents or engineers arriving cold.
 
 ## Client-Level Context
 
-- `GrowthAtWork` is one DAllman project family.
-- The upcoming RIA go-to-market assets are a separate DAllman project family and should become a sibling workspace at `/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign`.
-- Do not add the RIA campaign apps inside this GrowthAtWork workspace unless the user explicitly changes that decision.
+- Growth@Work is the broader DAllman client context for both this workspace and the RIA campaign.
+- This `GrowthAtWork` repo is the existing app workspace for the marketing site, Worthwhile Growth Index, and WayFinder experiments.
+- The RIA go-to-market assets are also Growth@Work work, but they are not the Worthwhile Growth Index app. Keep them in the sibling workspace at `/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign`.
+- Do not add the RIA campaign apps inside this WGI/WayFinder workspace unless the user explicitly changes that decision.
 - See `RIA_CAMPAIGN_PLAN.md` for the planned names and migration path.
 
 ## Repo Map

@@ -10,9 +10,11 @@ Important:
 
 ## Client Context
 
-`GrowthAtWork` is one project family for the DAllman client. A separate RIA go-to-market campaign is expected to arrive from Replit and should be managed as a sibling workspace, not as a child of this GrowthAtWork workspace.
+Growth@Work is the broader DAllman client context. This `GrowthAtWork` workspace is the existing app set for the marketing site, Worthwhile Growth Index, and WayFinder experiments.
 
-Planned sibling workspace:
+The RIA go-to-market campaign is also Growth@Work work, but it is not the Worthwhile Growth Index app. Keep it as a sibling workspace so the RIA campaign repos, docs, and deployments do not get mixed into the existing WGI/WayFinder app workspace.
+
+Sibling workspace:
 
 ```text
 /home/spencerf/Documents/Projects/Work/DAllman/RIACampaign/
@@ -97,7 +99,7 @@ Use the WayFinder repos when the task mentions:
 - commitments
 - database changes
 
-Use the future `RIACampaign` workspace when the task mentions:
+Use the sibling `RIACampaign` workspace when the task mentions:
 - RIA campaign
 - Advisor Assessment
 - RIA Evolution Assessment
