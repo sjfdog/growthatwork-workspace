@@ -1,8 +1,8 @@
 # Child application repositories are managed independently.
-/GrowthWebsite/
-/WorthwhileGrowthIndex/
-/WayFinder-Values-to-Integrated-Wealth-Experiment/
-/WayFinder-Values-to-Total-Health-Experiment/
+/WorthwhileGrowth/GrowthWebsite/
+/WorthwhileGrowth/WorthwhileGrowthIndex/
+/WorthwhileGrowth/WayFinder-Values-to-Integrated-Wealth-Experiment/
+/WorthwhileGrowth/WayFinder-Values-to-Total-Health-Experiment/
 /RIACampaign/
 
 # Root-level local clutter

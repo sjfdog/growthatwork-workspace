@@ -3,17 +3,20 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-repos=(
-  "GrowthWebsite"
-  "WorthwhileGrowthIndex"
-  "WayFinder-Values-to-Integrated-Wealth-Experiment"
-  "WayFinder-Values-to-Total-Health-Experiment"
-  "RIACampaign"
-)
+echo "=== Growth@Work umbrella ==="
+git -C "${ROOT}" status --short --branch
+echo
 
-for repo in "${repos[@]}"; do
-  echo "=== ${repo} ==="
-  git -C "${ROOT}/${repo}" status --short --branch
-  git -C "${ROOT}/${repo}" remote -v | sed -n '1,2p'
-  echo
-done
+if [ -x "${ROOT}/WorthwhileGrowth/scripts/status.sh" ]; then
+  echo "=== WorthwhileGrowth ==="
+  "${ROOT}/WorthwhileGrowth/scripts/status.sh"
+else
+  echo "WorthwhileGrowth status script is missing."
+fi
+
+if [ -x "${ROOT}/RIACampaign/scripts/status.sh" ]; then
+  echo "=== RIACampaign ==="
+  "${ROOT}/RIACampaign/scripts/status.sh"
+else
+  echo "RIACampaign status script is missing."
+fi
