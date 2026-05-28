@@ -10,6 +10,13 @@ This file is for AI agents or engineers arriving cold.
 - Prefer the repo `README.md` and `.env.example` over older migration or implementation guides.
 - Run `./scripts/bootstrap.sh` after cloning the workspace repo if the nested product repos are missing.
 
+## Client-Level Context
+
+- `GrowthAtWork` is one DAllman project family.
+- The upcoming RIA go-to-market assets are a separate DAllman project family and should become a sibling workspace at `/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign`.
+- Do not add the RIA campaign apps inside this GrowthAtWork workspace unless the user explicitly changes that decision.
+- See `RIA_CAMPAIGN_PLAN.md` for the planned names and migration path.
+
 ## Repo Map
 
 - `GrowthWebsite`
@@ -36,6 +43,17 @@ This file is for AI agents or engineers arriving cold.
   - job: full authenticated app backed by Postgres
 
 AWS also contains a paused App Runner service named `Wayfinder`. It is not mapped to one of the four active repos above; do not change it unless the user explicitly asks.
+
+## Future RIA Campaign Map
+
+- Workspace folder: `RIACampaign`
+- Workspace repo: `dallman-ria-campaign-workspace`
+- App repo: `dallman-ria-advisor-assessment`
+- App repo: `dallman-ria-briefing-series`
+- Expected Replit apps:
+  - `advisor-assessment-tool-version-5.replit.app`
+  - `ria-journey-briefings.replit.app`
+- The briefing URLs under `/briefing-1/` through `/briefing-5/` appear to be routes inside one briefing-series app, not five separate apps.
 
 ## Canonical Workflow
 

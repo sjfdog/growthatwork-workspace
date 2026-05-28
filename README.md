@@ -8,6 +8,24 @@ Important:
 - The canonical docs are the `README.md` and `.env.example` files inside each repo.
 - Older files such as `AWS_MIGRATION_GUIDE.md`, `AWS_DEPLOYMENT_GUIDE.md`, `COMPLETE_IMPLEMENTATION_GUIDE.md`, and `TRANSLATION_GUIDE.md` are historical context, not the first place to start.
 
+## Client Context
+
+`GrowthAtWork` is one project family for the DAllman client. A separate RIA go-to-market campaign is expected to arrive from Replit and should be managed as a sibling workspace, not as a child of this GrowthAtWork workspace.
+
+Planned sibling workspace:
+
+```text
+/home/spencerf/Documents/Projects/Work/DAllman/RIACampaign/
+```
+
+Planned GitHub repos:
+
+- `sjfdog/dallman-ria-campaign-workspace`
+- `sjfdog/dallman-ria-advisor-assessment`
+- `sjfdog/dallman-ria-briefing-series`
+
+See [RIA_CAMPAIGN_PLAN.md](/home/spencerf/Documents/Projects/Work/GrowthAtWork/RIA_CAMPAIGN_PLAN.md) for the migration plan and naming map.
+
 ## Active Repos
 
 | Repo | Purpose | GitHub | Current Deploy Target | Current Public URL |
@@ -78,6 +96,18 @@ Use the WayFinder repos when the task mentions:
 - reminders
 - commitments
 - database changes
+
+Use the future `RIACampaign` workspace when the task mentions:
+- RIA campaign
+- Advisor Assessment
+- RIA Evolution Assessment
+- 5 GAPs Introduction
+- RIA Briefing Series
+- Market Relevance GAPs
+- Growth Activation GAPs
+- Client Navigation GAPs
+- Integrated Life + Wealth GAPs
+- Advisor + Team Capability GAPs
 
 ## Notes For Handoff
 
