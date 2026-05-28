@@ -24,7 +24,7 @@ Planned GitHub repos:
 - `sjfdog/dallman-ria-advisor-assessment`
 - `sjfdog/dallman-ria-briefing-series`
 
-See [RIA_CAMPAIGN_PLAN.md](/home/spencerf/Documents/Projects/Work/GrowthAtWork/RIA_CAMPAIGN_PLAN.md) for the migration plan and naming map.
+See [RIA_CAMPAIGN_PLAN.md](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/RIA_CAMPAIGN_PLAN.md) for the migration plan and naming map.
 
 ## Active Repos
 
@@ -47,7 +47,7 @@ That will clone the four product repos into the expected subfolders.
 
 Then:
 
-1. Open [GrowthAtWork.code-workspace](/home/spencerf/Documents/Projects/Work/GrowthAtWork/GrowthAtWork.code-workspace) in VS Code.
+1. Open [GrowthAtWork.code-workspace](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/GrowthAtWork.code-workspace) in VS Code.
 2. Pick the repo you want to work on.
 3. Read that repo's `README.md`.
 4. Copy that repo's `.env.example` to a local `.env` only if you need local secrets.
@@ -63,10 +63,10 @@ npm run build
 
 These are local helper scripts for this workspace:
 
-- [scripts/status.sh](/home/spencerf/Documents/Projects/Work/GrowthAtWork/scripts/status.sh): show branch and repo status for all four repos
-- [scripts/build-all.sh](/home/spencerf/Documents/Projects/Work/GrowthAtWork/scripts/build-all.sh): run `npm run check` and `npm run build` across repos
-- [scripts/aws-services.sh](/home/spencerf/Documents/Projects/Work/GrowthAtWork/scripts/aws-services.sh): list current App Runner services in `us-east-1`
-- [scripts/bootstrap.sh](/home/spencerf/Documents/Projects/Work/GrowthAtWork/scripts/bootstrap.sh): clone the four app repos into the expected workspace layout
+- [scripts/status.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/status.sh): show branch and repo status for all four repos
+- [scripts/build-all.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/build-all.sh): run `npm run check` and `npm run build` across repos
+- [scripts/aws-services.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/aws-services.sh): list current App Runner services in `us-east-1`
+- [scripts/bootstrap.sh](/home/spencerf/Documents/Projects/Work/DAllman/GrowthAtWork/scripts/bootstrap.sh): clone the four app repos into the expected workspace layout
 
 ## Deployment Rules
 
